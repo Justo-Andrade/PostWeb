@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Post Producciones</title>
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="icon" href="assets/P DE POST EN GRIS 32X32.png" type="image/png">
+    <!-- Fuentes -->
+    <link href="https://fonts.cdnfonts.com/css/typewriter" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/holen-vintage" rel="stylesheet">
+</head>
+
+<body>
+        <!-- Header -->
+        <header>
+            <div class="header_social">
+                <div class="social--instagram"
+                <a href="https://www.instagram.com/postproducciones/" target="_blank" rel="nofollow, noopener, noreferrer">
+                    <img src="assets/Instagram-Logosu.png" alt="Instagram">
+                </a>
+                </div>
+    
+                <div class="social--youtube">
+                <a href="https://www.youtube.com/@Post_Producciones" target="_blank" rel="nofollow, noopener, noreferrer">
+                    <img src="assets/YouTube_full-color_icon_(2017).svg.png" alt="YouTube">
+                </a>
+                </div>
+    
+                <div class="social--linkedin">
+                <a href="LinkedIn" target="_blank" rel="nofollow, noopener, noreferrer">
+                    <img src="assets/LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                </div>
+            </div>
+    
+            <!-- Logo -->
+            <div class="header_logo">
+                <a href="index.html">
+                    <img src="assets/POST LOGO FINAL BLANCO.png" alt="Logo Post Producciones"/>
+                </a> 
+            </div>
+    
+            <!-- Menú de navegación -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="#galeria-films">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <!-- Contenido principal -->
+    <main>
+        <form action="send_mail.php" method="post">
+            <h3>CONTACTO</h3>
+            <p>Cuéntanos la película que te estás montando</p>
+            <div class="form_input">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="David Andrew Leo Fincher" name="username" id="nombre" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email" required>
+            </div>
+            <div class="form_input">
+                <label for="mensaje">Mensaje</label>
+                <textarea rows="8" placeholder="Mensaje" id="mensaje" required> </textarea>
+                <div class="file">
+                    <input type="file">
+                </div>
+            </div>
+            <div class="form_input">
+                <input type="checkbox" class="checkbox" id="checkbox" required>
+                <label for="checkbox"> Acepto los <a href="bases-legales.html"> términos y condiciones</a></label>
+            </div>
+            <div class="button">
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Post Producciones. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="bases-legales.html">Aviso Legal</a> |
+            <a href="bases-legales.html">Política de Cookies</a> |
+            <a href="bases-legales.html">Política de Privacidad</a>
+        </div>
+    </footer>
+</body>
+
+</html>

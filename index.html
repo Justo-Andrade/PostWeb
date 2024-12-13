@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Producciones</title>
+    <link rel="icon" href="assets/P DE POST EN GRIS 32X32.png" type="image/png">
+    <link rel="stylesheet" href="CSS/idea.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header_social">
+            <div class="social--instagram">
+            <a href="https://www.instagram.com/postproducciones/" target="_blank" rel="nofollow, noopener, noreferrer">
+                <img src="assets/Instagram-Logosu.png" alt="Instagram">
+            </a>
+            </div>
+
+            <div class="social--youtube">
+            <a href="https://www.youtube.com/@Post_Producciones" target="_blank" rel="nofollow, noopener, noreferrer">
+                <img src="assets/YouTube_full-color_icon_(2017).svg.png" alt="YouTube">
+            </a>
+            </div>
+
+            <div class="social--linkedin">
+            <a href="LinkedIn" target="_blank" rel="nofollow, noopener, noreferrer">
+                <img src="assets/LinkedIn_logo_initials.png" alt="LinkedIn">
+            </a>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="assets/POST LOGO FINAL BLANCO.png" alt="Logo Post Producciones"/>
+            </a> 
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="#galeria-films">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fondo interactivo Cinta de Película -->
+    <video autoplay muted loop id="background-video">
+        <source src="assets\200T Grain.mp4" type="video/mp4">
+        <div class="superponer"></div>
+    </video>
+
+    <!-- Portada -->
+    <section id="inicio" class="portada">
+        <div class="texto-portada">
+            <h1>Post Productora Audiovisual</h1>
+            <p>Cine, Documental, Publicidad, Entrevistas, Podcast.</p>
+            <a href="contacto.html">
+                <button>Contáctanos</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <div class="contenido">
+            <img src="assets/Kodak kichos.png" alt="Sobre Nosotros">
+            <div class="texto">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos un equipo de editores que montan obras audiovisuales que destacan por su narrativa y estética. Adaptando cada proyecto a sus necesidades.</p>
+                <a href="about.html">
+                    <button>Leer Más</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Fondo de nieve-->
+<div class="snowfall">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+</div>
+
+<!-- Galería -->
+    <section id="galeria-films" class="galeria-films">
+        <div class="slider-container">
+            <button class="slider-btn prev">&lt;</button>
+            <div class="slider">
+                <div class="item">
+                    <img src="assets/002_DiAna24_065.jpg" onclick="redirect('ficcion')" alt="Ficción">
+                    <div class="image-label">
+                        <h3 onclick="redirect('ficcion')">FICCIÓN</h3>
+                        <a href="Ficcion.html">VER</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/Kichitos_Podcast.JPG" onclick="redirect('podcast')" alt="Podcast">
+                    <div class="image-label">
+                        <h3>PODCAST</h3>
+                        <a href="podcast.html">VER</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/FOTODEP.jpg" onclick="redirect('foto-deportiva')" alt="Fotografía Deportiva">
+                    <div class="image-label">
+                        <h3>FOTOGRAFÍA DEPORTIVA</h3>
+                        <a href="foto-deportiva.html">VER</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/elático_streaming_2.png" id="elatico-photo" alt="Publicidad">
+                    <div class="image-label">
+                        <h3>PUBLICIDAD</h3>
+                        <a href="publicidad.html">VER</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/docu cinematic.jpg" alt="Documental">
+                    <div class="image-label">
+                        <h3>DOCUMENTAL</h3>
+                        <a href="documental.html">VER</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios-section">
+        <!-- Testimonio 1 -->
+        <div class="testimonio">
+            <img src="https://i.postimg.cc/CBgXh3VR/Jara-Studio.png" alt="Logo Cliente">
+            <div>
+                <h4>Javier Riera</h4>
+                <p>Jara Studio</p>
+                <blockquote>"Súper trabajadores, súper profesionales, un 10."</blockquote>
+            </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonio">
+            <img src="https://i.postimg.cc/4mPJr1Vv/Imagen-de-Whats-App-2024-11-26-a-las-14-48-17-e0cf8e47.png" alt="Logo Cliente">
+            <div>
+                <h4>Edu de Miguel</h4>
+                <p>Ibiza Producciones</p>
+                <blockquote>"Frescura y profesionalidad. Una pareja imbatible que te facilitará el trabajo en todos sus ámbitos."</blockquote>
+            </div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="testimonio">
+            <img src="https://i.postimg.cc/c6bbbg59/logo-energynova.png" alt="Logo Cliente">
+            <div>
+                <h4>Pedro Casanueva</h4>
+                <p>Energy Nova</p>
+                <blockquote>
+                    "Recomiendo el servicio de Justo al 200%. Comprometido, profesional y muy cercano. Me ha ayudado desde el primer día que inicié mi proyecto de marca personal y sus consejos son top."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Post Producciones. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="bases-legales.html">Aviso Legal</a> |
+            <a href="bases-legales.html">Política de Cookies</a> |
+            <a href="bases-legales.html">Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+/* Font imports */
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('/assets/fonts/TypeWriter.woff') format('woff');
+    /* Ruta correcta a la fuente */
+}
+
+@font-face {
+    font-family: 'Holen-vintage';
+    src: url('/assets/fonts/HolenVintageRegular.woff') format('woff');
+    /* Ruta correcta a la fuente */
+}
+
+
+/* General */
+
+body {
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para los textos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 45px;
+}
+
+/* RRSS */
+.header_social{
+    display: flex;
+    gap: 10px;
+    padding: auto;
+}
+
+.header_social img{
+    transition: transform 0.3s ease, filter 0.3 ease;
+    filter: grayscale(100%);
+}
+
+.header_social img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%); 
+}
+
+.social--instagram img{
+    width: 45px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.social--youtube img{
+    width: 28px;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+.social--linkedin img{
+    width: 24px;
+    margin-left: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* Logo */
+.header_logo{
+    flex: 1;
+    text-align: center;
+}
+
+.header_logo img{
+    max-height: 120px;
+    width: auto;
+    transition: transform 0.3s ease;
+    padding-left: 80px;
+}
+
+.header_logo img:hover {
+    transform: scale(1.05); /* Efecto ligero al pasar el mouse */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para los enlaces */
+}
+
+h1 {
+    font-family: 'holen-vintage';
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+    font-family: 'typewriter';
+    color:#000;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 25%;
+}
+
+.legal-section {
+    background: url(../assets/papel.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 90%; /* Limita el ancho máximo al 90% del viewport */
+    width: 800px; /* Ancho base para pantallas grandes */
+    margin: 2rem auto; /* Centrado vertical y horizontal con margen automático */
+    padding: 2rem; /* Espacio interno */ 
+    border-radius: 10px;
+    color: #333; /* Texto oscuro sobre fondo claro */
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.5;
+    border: 2px solid rgba(36, 36, 36, 0.8); /* Línea tenue */ 
+    box-shadow: -10px 10px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+.justified-text{
+
+    text-align: justify;
+}
+
+
+@media (max-width: 1024px) {
+    .legal-section {
+        width: 90%; /* Ancho dinámico para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .legal-section {
+        width: 95%; /* Aumenta el ancho en pantallas pequeñas */
+        padding: 1.5rem; /* Reduce el espacio interno */
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-section {
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas muy pequeñas */
+        padding: 1rem;
+    }
+}
+
+h2{
+    text-align: center;
+}
+p, h3, h4{
+    margin: 20px 10%;
+}
+
+ul{
+    margin: 20px 25%;
+}
+
+/* Enlaces */
+
+a {
+    color: #69f;
+}
+
+#aviso-legal{
+    margin-top: 90px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+

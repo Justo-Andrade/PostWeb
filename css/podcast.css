@@ -1,0 +1,341 @@
+/* Font imports */
+@font-face {
+    font-family: 'Typewriter';
+    src: url('/assets/fonts/TypeWriter.woff') format('woff'); /* Ruta correcta a la fuente */
+}
+
+@font-face {
+    font-family: 'Holen-vintage';
+    src: url('/assets/fonts/HolenVintageRegular.woff') format('woff'); /* Ruta correcta a la fuente */
+}
+/* General */
+body {
+    font-family: 'typewriter', sans-serif; /* Fuente para los textos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 45px;
+}
+
+/* RRSS */
+.header_social{
+    display: flex;
+    gap: 10px;
+    padding: auto;
+}
+
+.header_social img{
+    transition: transform 0.3s ease, filter 0.3 ease;
+    filter: grayscale(100%);
+}
+
+.header_social img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%); 
+}
+
+.social--instagram img{
+    width: 45px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.social--youtube img{
+    width: 28px;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+.social--linkedin img{
+    width: 24px;
+    margin-left: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* Logo */
+.header_logo{
+    flex: 1;
+    text-align: center;
+}
+
+.header_logo img{
+    max-height: 120px;
+    width: auto;
+    transition: transform 0.3s ease;
+    padding-left: 80px;
+}
+
+.header_logo img:hover {
+    transform: scale(1.05); /* Efecto ligero al pasar el mouse */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para los enlaces */
+}
+
+h1 {
+    font-family: 'holen-vintage';
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 25%;
+}
+
+/* Container for marquee */
+.marquee-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #222;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px #09ff0080;
+    position: relative;
+    padding: 20px;
+}
+
+/* Marquee text styling */
+.marquee h1 {
+    font-size: 2.5rem;
+    font-family: 'Holen-vintage', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 35px 0;
+    color: #ffd000b6;
+    text-shadow: 0 0 10px #f8da54, 0 0 20px #ffd000b6;
+}
+
+/* Neon light effect for the marquee */
+.marquee-container:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #ffd000b6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #f8da54, 0 0 20px #f8da54, 0 0 30px #ffd000b6;
+    z-index: -1;
+}
+/* Add alternating neon lights (optional animation) */
+@keyframes neon {
+    0%, 100% {
+        box-shadow: 0 0 10px #f8da54, 0 0 20px #ffd000b6;
+    }
+    50% {
+        box-shadow: 0 0 20px #f8da54, 0 0 30px #ffd000b6;
+    }
+}
+
+
+.marquee-container {
+    animation: neon 1.5s infinite alternate;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+}
+
+/* Estilo Vintage Sencillo */
+.ficcion h1 {
+    font-family: 'holen-vintage', sans-serif; /* Fuente retro */
+    font-size: 3rem;
+    color: #ffffff; /* Rojo vibrante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #111; /* Fondo oscuro */
+    border: 4px solid #fff; /* Borde blanco */
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px #ffffff; /* Efecto iluminado */
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Bombillas decorativas en el borde */
+.ficcion h1:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px dashed #000000; /* Línea decorativa */
+    border-radius: 15px;
+    z-index: -1;
+}
+
+/* Animación opcional para el borde */
+@keyframes subtleGlow {
+    0%, 100% {
+        box-shadow: 
+            0 0 10px #ffd000b6,
+            0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 
+            0 0 15px #ffd000b6,
+            0 0 25px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.ficcion h1:hover {
+    animation: subtleGlow 2s infinite alternate;
+}
+
+
+.ficcion {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Casillas de proyectos */
+.proyecto {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    max-height: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con opacidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transiciones para hover */
+}
+
+/* Separación entre casillas */
+.proyecto:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Alternar orden de los elementos */
+.proyecto:nth-child(odd) {
+    flex-direction: row;
+}
+
+.proyecto:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Estilo del contenido dentro de la casilla */
+.proyecto img {
+    width: 300px;
+    margin: 15px;
+
+}
+
+.proyecto h2 {
+    font-family: 'holen-vintage', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.proyecto p {
+    font-family: 'typewriter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+    text-align: center;
+}
+
+.proyecto .texto {
+    width: 80%;
+}
+
+.proyecto h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+/* Hover para las casillas */
+.proyecto:hover {
+    transform: scale(1.05); /* Ampliación ligera */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.2); /* Sombra más marcada */
+}
+
+/* Hover en el texto */
+.proyecto h2:hover {
+    color: #ffffff; /* Color destacado */
+    text-shadow: 0 0 10px #ffd000b6, 0 0 20px #ffffff;
+}
+
+.neon {
+    letter-spacing: 4px;
+    font-family: 'typewriter';
+    font-size: 1rem;
+    color: #ffd000b6;
+    text-shadow: 0 0 5px #ffd000b6, 0 0 10px #ffd000b6;
+    animation: blink 1s infinite;
+    text-decoration: none;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Enlaces */
+a{
+    color: #4d94ff;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+.footer-links{
+    color: azure;
+    font-family: 'typewriter';
+}

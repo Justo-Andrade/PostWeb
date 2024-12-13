@@ -1,0 +1,564 @@
+/* Font imports */
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('/assets/fonts/TypeWriter.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Holen-vintage';
+    src: url('/assets/fonts/HolenVintageRegular.woff') format('woff');
+}
+
+
+/* General */
+
+body {
+    font-family: 'typewriter', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+/* RRSS */
+.header_social{
+    display: flex;
+    gap: 10px;
+    padding: auto;
+}
+
+.header_social img{
+    transition: transform 0.3s ease, filter 0.3 ease;
+    filter: grayscale(100%);
+}
+
+.header_social img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%); 
+}
+
+.social--instagram img{
+    width: 45px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.social--youtube img{
+    width: 33px;
+    padding-top: 2px;
+    padding-right: 5px;
+}
+
+.social--linkedin img{
+    width: 24px;
+    margin-left: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/* Logo */
+.header_logo{
+    flex: 1;
+    text-align: center;
+}
+
+.header_logo img{
+    max-height: 120px;
+    width: auto;
+    transition: transform 0.3s ease;
+    padding-left: 80px;
+}
+
+.header_logo img:hover {
+    transform: scale(1.05); /* Efecto ligero al pasar el mouse */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para los enlaces */
+}
+
+h1 {
+    font-family: 'holen-vintage';
+}
+
+
+/* Portada */
+
+.portada {
+    background: url('../assets/Con\ nuestros\ friends.jpg') center / cover fixed rgba(0, 0, 0, 1);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-portada {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    font-family: 'holen-vintage', sans-serif;
+    text-shadow: 4px 4px 3px #000;
+    /* Fuente para el logo */
+}
+
+.texto-portada h1 {
+    font-family: 'holen-vintage', sans-serif;
+    /* Fuente para el título */
+    font-size: 3em;
+}
+
+.texto-portada p {
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para el párrafo */
+    font-size: 1.2em;
+}
+
+.texto-portada button {
+    cursor: pointer;
+    font-family: 'typewriter';
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(95, 44, 10, 0.8);
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.89);
+    border-radius: 15px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 25%;
+}
+
+.contenido {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contenido img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    /* Para centrar si hay restricciones adicionales */
+}
+
+
+/* Sobre Nosotros */
+
+.sobre-nosotros {
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.sobre-nosotros img {
+    width: 50%;
+    border-radius: 10px;
+    rotate: -5deg;
+}
+
+.sobre-nosotros .texto {
+    text-align: center;
+    border: 2px solid#ffff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    padding: 20px;
+}
+
+.sobre-nosotros h2 {
+    font-family: 'holen-vintage', sans-serif;
+    text-align: center;
+    /* Fuente para el título */
+}
+
+.sobre-nosotros p {
+    text-align: left;
+    font-family: 'typewriter', sans-serif;
+    /* Fuente para los textos */
+}
+
+.sobre-nosotros button {
+    cursor: pointer;
+    font-family: 'typewriter';
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 189, 45, 0.849);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.89);
+    border-radius: 15px;
+}
+
+a button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+/* Snowfall */
+.snowfall{
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    overflow: hidden;
+}
+
+.snowflake{
+    --small: 3px;
+    --medium: 7px;
+    width: var(--small);
+    height: var(--small);
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snow 6s linear infinite,
+    wind 10s ease-in-out infinite;
+    top: 10%;
+    left: auto;
+}
+
+.snowflake:nth-child(2n+3) {
+    /* 3, 5, 7, ... */
+    width: var(--medium);
+    height: var(--medium);
+}
+
+.snowflake:nth-child(1) {
+    left: 25%;
+    animation-delay: 1s;
+}
+
+.snowflake:nth-child(2) {
+    left: 85%;
+    animation-delay: 1.5s;
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(4) {
+    left: 65%;
+    animation-delay: 2.5s;
+}
+
+.snowflake:nth-child(5) {
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(6) {
+    left: 95%;
+    animation-delay: 3.5s;
+}
+
+.snowflake:nth-child(7) {
+    left: 55%;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(8) {
+    left: 10%;
+    animation-delay: 4.5s;
+}
+
+.snowflake:nth-child(9) {
+    left: 70%;
+    animation-delay: 5s;
+}
+
+.snowflake:nth-child(10) {
+    left: 20%;
+    animation-delay: 5.5s;
+}
+
+@keyframes snow {
+    100% {
+        top:100%;
+    }
+}
+
+@keyframes wind {
+    50% {
+        transform: translateX(120px);
+    }
+}
+
+/* Contenedor principal */
+
+.galeria-films {
+    margin: 60px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+
+/* Contenedor del slider */
+
+.slider-container {
+    position: relative;
+    max-width: 1700px;
+    margin: auto;
+    background: transparent;
+}
+
+
+/* Slider */
+
+.slider {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.image-label {
+    margin-bottom: 1.5em;
+}
+
+
+/* Ítems */
+
+.item {
+    flex: 0 0 calc(100% / 3 - 30px);
+    max-width: calc(100% / 3 - 30px);
+    background: rgba(0, 0, 0, 0.747);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Contenido dentro de cada ítem */
+
+.item .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.item p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+/* Botones de navegación */
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.slider-btn.prev {
+    left: 5px;
+}
+
+.slider-btn.next {
+    right: 5px;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+
+/* Testimonios */
+
+.testimonios-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los testimonios se acomoden en varias filas si es necesario */
+    justify-content: space-evenly;
+    /* Distribuye los testimonios equitativamente */
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonio {
+    display: flex;
+    /* Diseño horizontal */
+    flex-direction: row;
+    /* Los elementos dentro de cada testimonio estarán en fila */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    border: 2px solid hsl(36, 58%, 81%);
+    border-radius: 10px;
+    padding: 20px;
+    /* Espacio interno más amplio */
+    background: hsl(0, 0%, 25%);
+    /* Fondo más claro */
+    color: #fff;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: auto;
+    /* Máximo ancho de cada testimonio */
+    min-height: 180px;
+    /* Altura mínima ajustada */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Evita desbordamiento del texto */
+}
+
+.testimonio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
+}
+
+.testimonio img {
+    max-height: 50px;
+    /* Logo más pequeño */
+    margin-right: 20px;
+    /* Espaciado entre logo y texto */
+}
+
+.testimonio div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonio h4 {
+    font-size: 1.5rem;
+    /* Tamaño mayor para el nombre */
+    margin: 0;
+}
+
+.testimonio p {
+    font-size: 1.2rem;
+    margin: 0;
+    color: hsl(36, 58%, 81%);
+}
+
+.testimonio blockquote {
+    font-size: 1.1rem;
+    /* Tamaño ajustado */
+    font-style: italic;
+    color: hsl(36, 58%, 75%);
+    margin: 0;
+    line-height: 1.5;
+    /* Espaciado entre líneas */
+}
+
+@media (max-width: 768px) {
+    .testimonios-section {
+        flex-direction: column;
+        /* Apila testimonios en pantallas pequeñas */
+        align-items: center;
+    }
+    .testimonio {
+        max-width: 90%;
+        /* Ajuste para pantallas pequeñas */
+        min-height: 220px;
+        /* Altura mínima más grande */
+    }
+}
+
+
+/* Responsividad para 3 testimonios */
+
+@media (max-width: 768px) {
+    .testimonios-section {
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+    }
+    .testimonio {
+        max-width: 100%;
+        /* Ocupa todo el ancho disponible */
+    }
+}
+
+
+/* Enlaces */
+
+a {
+    color: #69f;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.footer-links {
+    color: azure;
+    font-family: 'typewriter';
+}
